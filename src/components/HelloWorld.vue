@@ -10,29 +10,17 @@
         >
         </v-img>
 
-        <v-card-title primary-title>
-          <div>
-            <div class="headline">{{ element.nombre_pizza }}</div>
-            <span class="green--text">$ {{ element.precio }}</span>
-          </div>
-        </v-card-title>
+          <v-card-title primary-title>
+            <div>
+              <div class="headline">{{ element.nombre_pizza }}</div>
+              <span class="green--text">$ {{ element.precio }}</span>
+            </div>
+          </v-card-title>
 
-        <v-card-actions>
-          <v-expansion-panel focusable>
-              <v-expansion-panel-content
-              :key="element.id">
-                <template v-slot:header>
-                  <span flat color="blue">Descripcion</span>
-                </template>
-                <v-card>
-                  <v-card-text>{{ element.descripcion }}</v-card-text>
-                  <br>
-                  <v-btn flat color="blue" :to="{name:'order',params: {id: element.id}}">Ordenar</v-btn>
-                </v-card>
-              </v-expansion-panel-content>
-            </v-expansion-panel>
-        </v-card-actions>
-      </v-card>
+          <v-card-text>{{ element.descripcion }}</v-card-text>
+          <v-btn color="blue" :to="{name:'order',params: {id: element.id}}">Ordenar</v-btn>
+        </v-card>
+       </v-hover>
     </v-flex>
   </v-layout>
   </v-container>
