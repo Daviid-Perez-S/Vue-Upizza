@@ -1,6 +1,6 @@
 <template>
-  <v-app dark>
-    <v-toolbar app>
+  <v-app>
+    <v-toolbar app color="amber">
       <v-toolbar-title class="headline">
         <span>UPizza</span>
       </v-toolbar-title>

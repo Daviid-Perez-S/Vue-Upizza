@@ -71,7 +71,7 @@
 </template>
 
 <script>
-  let stripe = Stripe(`pk_test_0O64VFv2CpBBw2tXLQjY41tf00kIe8lGmk`),
+  let stripe = Stripe(`pk_test_4L1xahyRRzKSMg44DGikIXTS00TtkYMmdB`),
   elements = stripe.elements(),
   card = undefined;
   export default {

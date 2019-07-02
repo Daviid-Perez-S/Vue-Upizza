@@ -2,10 +2,11 @@
   <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
      <v-flex xs4 v-for='element in menu' :key='element.id' :element='element'>
-      <v-card>
+      <v-card class="card-pizzita">
         <v-img
           v-bind:src=element.imagen
           height="200px"
+          class="pizzita-img"
         >
         </v-img>
 
@@ -67,5 +68,23 @@
 </script>
 
 <style>
+
+.card-pizzita {
+  border-radius: 5% 5% 0 0%;
+  margin-bottom: 10%;
+  transition: transform .3s;
+}
+
+.card-pizzita:hover {
+transform: scale(1.05);
+}
+
+.pizzita-img {
+  border-radius: 100%;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+  /* top: 50px; */
+}
 
 </style>
