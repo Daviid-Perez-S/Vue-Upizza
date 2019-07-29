@@ -2,6 +2,7 @@
   <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
      <v-flex xs4 v-for='element in menu' :key='element.id' :element='element'>
+      <v-hover>
       <v-card class="card-pizzita">
         <v-img
           v-bind:src=element.imagen

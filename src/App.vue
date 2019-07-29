@@ -2,7 +2,7 @@
   <v-app>
     <v-toolbar app color="amber">
       <v-toolbar-title class="headline">
-        <span>UPizza</span>
+        <span><a href="/" id="main-title">UPizza</a></span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
     </v-toolbar>
@@ -22,3 +22,11 @@ export default {
   }
 }
 </script>
+
+<style>
+  #main-title {
+    text-decoration: none;
+    color: black;
+  }
+</style>
+
